@@ -1,0 +1,21 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.HandaAko" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">#2196F3</item>
+        <item name="colorPrimaryVariant">#1976D2</item>
+        <item name="colorAccent">#03A9F4</item>
+        <item name="backgroundColor">#ecf0f1</item>
+        <item name="textFillColor">#212121</item>
+<!--        <item name="android:textColorSecondary">#757575</item>-->
+        <item name="dividerColor">#BDBDBD</item>
+
+    </style>
+    <style name="Theme.HandaAko.Fullscreen" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="Theme.HandaAko" parent="Base.Theme.HandaAko" >
+
+    </style>
+</resources>

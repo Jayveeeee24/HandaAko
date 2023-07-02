@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:cardCornerRadius="15dp"
+        app:contentPadding="5dp"
+        app:strokeColor="@color/black"
+        app:strokeWidth="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:paddingStart="15dp"
+            android:paddingTop="25dp"
+            android:paddingEnd="15dp"
+            android:paddingBottom="25dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/greeting_title"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/black"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/verdana"
+                android:gravity="center_horizontal"
+                android:text="CONGRATULATIONS"
+                android:textAllCaps="true"
+                android:textSize="18sp"
+                tools:ignore="HardcodedText" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/greeting_animation"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:lottie_rawRes="@raw/congratulations"
+                android:layout_gravity="center_horizontal"
+                app:lottie_loop="true"
+                app:tint="@color/white"
+                tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/greeting_description"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/verdana"
+                android:gravity="center_horizontal"
+                android:textColor="@color/peter_river"
+                android:text="Ang sagot ay Lindol"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/greeting_dismiss_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:strokeColor="@color/nephritis"
+                app:strokeWidth="2dp"
+                app:cardCornerRadius="20dp"
+                android:backgroundTint="@color/green_sea"
+                app:cardElevation="0dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                android:clickable="true"
+                android:focusable="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="10dp"
+                        android:textColor="@color/white"
+                        android:backgroundTint="@android:color/transparent"
+                        android:layout_marginBottom="5dp"
+                        android:fontFamily="@font/opensans_regular"
+                        android:text="ALISIN"
+                        android:textAllCaps="true"
+                        android:textSize="16sp"
+                        tools:ignore="HardcodedText" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+</RelativeLayout>

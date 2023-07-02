@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/scrollview"
+    android:layout_height="wrap_content"
+    tools:context=".fragments.LearnViewFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/learn_view_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:contentDescription="Larawan ng Sakuna"
+            android:src="@drawable/earthquake"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/learn_view_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/learn_view_image"
+            android:layout_marginTop="10dp"
+            android:fontFamily="casual"
+            android:text="Lindol"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/learn_view_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/learn_view_title"
+            android:fontFamily="@font/opensans_medium"
+            android:text="Ang lindol ay ang mahina hanggang sa malakas na pagyanig ng lupa dulot ng biglaang paggalaw ng mga bato sa ilalim nito. "
+            android:textSize="20sp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/learn_video_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/learn_view_description"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/opensans_medium"
+            android:text="Paano nga ba maghanda kapag may "
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <FrameLayout
+            android:id="@+id/learn_video_frame"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_below="@id/learn_video_title">
+
+            <VideoView
+                android:id="@+id/learn_view_video"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/learn_video_reference"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/learn_video_frame"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            android:text="Mula sa "
+            android:textSize="15sp"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:id="@+id/learn_view_add_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:layout_marginTop="20dp"
+            android:contentDescription="Karagdagang mga Larawan"
+            android:layout_below="@id/learn_video_reference"
+            android:src="@drawable/causes_of_fire"
+            tools:ignore="HardcodedText" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/learn_view_add_image"/>
+
+    </RelativeLayout>
+
+</ScrollView>

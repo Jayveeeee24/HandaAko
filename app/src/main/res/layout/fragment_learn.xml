@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.LearnFragment"
+    android:background="@color/orange">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/splash_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bg"
+            android:layout_alignParentTop="true"
+            android:adjustViewBounds="true"
+            app:tint="@color/alizarin"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pumili ng natural\nna kalamidad na\ngusto mong\nmatutunan"
+            android:layout_gravity="start"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="30dp"
+            android:fontFamily="@font/opensans_regular"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:adjustViewBounds="true"
+            android:src="@drawable/dash_kids"
+            android:contentDescription="Batang Nagbabasa"
+            tools:ignore="HardcodedText" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/learn_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/splash_bg"/>
+
+    </RelativeLayout>
+
+</ScrollView>

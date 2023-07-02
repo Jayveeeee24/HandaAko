@@ -1,0 +1,14 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.HandaAko" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <item name="colorPrimary"> #2196F3</item>
+        <item name="colorPrimaryVariant">#1976D2</item>
+        <item name="colorAccent">#03A9F4</item>
+        <item name="backgroundColor">#121212</item>
+        <item name="textFillColor">#FFFFFF</item>
+<!--        <item name="android:textColorSecondary">#BDBDBD</item>-->
+        <item name="dividerColor">#757575</item>
+
+    </style>
+</resources>

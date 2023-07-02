@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.EmergencyFragment"
+    android:background="@color/nephritis">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/splash_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bg"
+            android:layout_alignParentTop="true"
+            android:adjustViewBounds="true"
+            app:tint="@color/blue_surf"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Manatiling ligtas \nat handa sa\noras ng \nkalamidad "
+            android:layout_gravity="start"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="30dp"
+            android:fontFamily="@font/opensans_regular"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ewan"
+            android:contentDescription="Batang Nagbabasa"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Emergency Siren"
+            android:layout_marginStart="20dp"
+            android:id="@+id/emergency_title"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:fontFamily="@font/opensans_medium"
+            tools:ignore="HardcodedText"
+            android:layout_below="@id/splash_bg"
+            android:textSize="20sp"/>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:id="@+id/emergency_siren_button"
+            android:contentDescription="Button para sa sirena"
+            android:layout_below="@id/emergency_title"
+            android:focusable="true"
+            android:clickable="true"
+            app:cardElevation="5dp"
+            android:layout_centerHorizontal="true"
+            app:cardCornerRadius="150dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            tools:ignore="HardcodedText">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/siren_button"
+                android:background="@color/wet"
+                android:padding="30dp">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/siren_animation"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    app:lottie_rawRes="@raw/speaker_siren"
+                    app:lottie_loop="true"
+                    app:tint="@color/white"
+                    tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Emergency Contacts"
+            android:layout_marginStart="20dp"
+            android:id="@+id/emergency_contact"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:fontFamily="@font/opensans_medium"
+            tools:ignore="HardcodedText"
+            android:layout_below="@id/emergency_siren_button"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"/>
+
+        <Spinner
+            android:id="@+id/change_emergency_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@id/emergency_contact"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@color/white"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/emergency_recylerview"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_below="@id/change_emergency_spinner"/>
+
+        <TextView
+            android:id="@+id/emergency_reference"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/emergency_recylerview"
+            android:layout_marginEnd="20dp"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/white"
+            android:layout_marginTop="5dp"
+            android:text="Mula sa GO Cavite Facebook"
+            android:textSize="15sp"
+            tools:ignore="HardcodedText" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_below="@id/emergency_reference"
+            android:layout_height="50dp"/>
+
+    </RelativeLayout>
+
+</ScrollView>
