@@ -204,7 +204,6 @@ public class QuizFragment extends Fragment {
             @SuppressLint("SetTextI18n")
             @Override
             public void onClick(View view) {
-                Toast.makeText(context, choice1Text.getText().toString() + answer, Toast.LENGTH_SHORT).show();
                 if (choice1Text.getText().toString().equals(answer)){
                     greeting_title.setText("CONGRATULATIONS");
                     greeting_animation.setAnimation(R.raw.congratulations);
@@ -218,7 +217,6 @@ public class QuizFragment extends Fragment {
         choice2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(context, choice2Text.getText().toString() + answer, Toast.LENGTH_SHORT).show();
                 if (choice2Text.getText().toString().equals(answer)){
                     greeting_title.setText("CONGRATULATIONS");
                     greeting_animation.setAnimation(R.raw.congratulations);
@@ -232,7 +230,6 @@ public class QuizFragment extends Fragment {
         choice3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(context, choice3Text.getText().toString() + answer, Toast.LENGTH_SHORT).show();
                 if (choice3Text.getText().toString().equals(answer)){
                     greeting_title.setText("CONGRATULATIONS");
                     greeting_animation.setAnimation(R.raw.congratulations);
@@ -246,7 +243,6 @@ public class QuizFragment extends Fragment {
         choice4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(context, choice4Text.getText().toString() + answer, Toast.LENGTH_SHORT).show();
                 if (choice4Text.getText().toString().equals(answer)){
                     greeting_title.setText("CONGRATULATIONS");
                     greeting_animation.setAnimation(R.raw.congratulations);

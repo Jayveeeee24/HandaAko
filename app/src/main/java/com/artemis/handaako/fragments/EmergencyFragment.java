@@ -87,31 +87,31 @@ public class EmergencyFragment extends Fragment implements AdapterView.OnItemSel
         ArrayList<EmergencyContactItem> emergencyContactItems = new ArrayList<>();
 
         if (adapterView.getItemAtPosition(i).toString().equals("Kawit")){
-            for (int j =0; i<=localityData.kawitContactName.length; i++) {
+            for (int j =0; j<7; j++) {
                 emergencyContactItems.add(new EmergencyContactItem(localityData.kawitContactName[j], localityData.kawitContactNumber[j]));
             }
         }else if (adapterView.getItemAtPosition(i).toString().equals("Cavite City")){
-            for (int j =0; i<=localityData.caviteCityName.length; i++) {
+            for (int j =0; j<2; j++) {
                 emergencyContactItems.add(new EmergencyContactItem(localityData.caviteCityName[j], localityData.caviteCityNumber[j]));
             }
         }else if (adapterView.getItemAtPosition(i).toString().equals("Rosario")){
-            for (int j =0; i<=localityData.rosarioName.length; i++) {
+            for (int j =0; j<3; j++) {
                 emergencyContactItems.add(new EmergencyContactItem(localityData.rosarioName[j], localityData.rosarioNumber[j]));
             }
         }else if (adapterView.getItemAtPosition(i).toString().equals("Tanza")){
-            for (int j =0; i<=localityData.tanzaName.length; i++) {
+            for (int j =0; j<6; j++) {
                 emergencyContactItems.add(new EmergencyContactItem(localityData.tanzaName[j], localityData.tanzaNumber[j]));
             }
         }else if (adapterView.getItemAtPosition(i).toString().equals("Noveleta")){
-            for (int j =0; i<=localityData.noveletaName.length; i++) {
+            for (int j =0; j<3; j++) {
                 emergencyContactItems.add(new EmergencyContactItem(localityData.noveletaName[j], localityData.noveletaNumber[j]));
             }
         }else if (adapterView.getItemAtPosition(i).toString().equals("Imus")){
-            for (int j =0; i<=localityData.imusName.length; i++) {
+            for (int j =0; j<5; j++) {
                 emergencyContactItems.add(new EmergencyContactItem(localityData.imusName[j], localityData.imusNumber[j]));
             }
         }else if (adapterView.getItemAtPosition(i).toString().equals("Bacoor")){
-            for (int j =0; i<=localityData.bacoorName.length; i++) {
+            for (int j =0; j<2; j++) {
                 emergencyContactItems.add(new EmergencyContactItem(localityData.bacoorName[j], localityData.bacoorNumber[j]));
             }
         }
